@@ -1,0 +1,30 @@
+.estilo h1 {
+    text-align: center;
+    color: blue;
+    /* Criei uma div, 
+ Coloquei o Titulo na cor azul no centro*/
+}
+
+.estilo p {
+    background-color: red;
+    color: yellow;
+    text-align: right;
+    /* Criei uma div, 
+ Coloquei o paragrafo na cor Amarelo e sua linha na cor vermelha 
+ na posição direita*/
+}
+
+p {
+    text-align: left;
+    color: blue;
+    /* Criei um segundo Paragrafo fora de uma div,
+    Coloquei o paragrafo na cor azul ao lado esquerdo*/
+}
+
+body {
+    text-align: center;
+    /*
+    Alinhei todo o Body ao centro,
+    ou seja tudo que faz parte do BODY, seja img ou outros.
+    */
+}
