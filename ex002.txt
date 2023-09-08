@@ -1,0 +1,35 @@
+1º anexo:
+    1 2 3 4 5
+a:  P P M P M
+b:  M P M M P
+c:  M M M P M
+d:  M P P M P
+e:  P M M P M
+
+2º anexo: 
+   1 2 3 4 5 6
+a: P P M P M P 
+b: M P M M P M
+c: M M M P M P
+d: M P P M P P
+e: P M M P M M
+f: M P P P M P
+
+3º anexo:
+   1 2 3 4 5 6
+a: P P M P M P
+b: M P M M P M
+c: M M M P M P
+d: M P M M P P
+e: P M M P P M
+f: M P P P M P
+
+
+
+foi acrescentado no grafico 2º o total de 11 Alunos, somando ao todo 36 Alunos
+
+E - 5 Saiu o Aluno de Matématica e entrou o de Português
+D - 3 Saiu o Aluno de Português e entrou o de Matématica
+
+No Grafico 2º e 3º  entende que o Aluno E-5, da materia de Matématica trocou pelo de Português.
+o Aluno D - 3 da materia de Português trocou com o Aluno de Matématica

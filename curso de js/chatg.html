@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+ let candidato_X = 0;
+    let candidato_Y = 0;
+    let candidato_Z = 0;
+    let votos_branco = 0;
+    let votos_nulos = 0;
+
+    function realizarVotacao() {
+      let voto_str = prompt('Digite o número do candidato (1 para candidato_X, 2 para candidato_Y, 3 para candidato_Z, 0 para branco):');
+      
+      if (voto_str === '1') {
+        candidato_X++;
+      } else if (voto_str === '2') {
+        candidato_Y++;
+      } else if (voto_str === '3') {
+        candidato_Z++;
+      } else if (voto_str === '0') {
+        votos_branco++;
+      } else {
+        votos_nulos++;
+      }
+      
+      let resposta = prompt('Deseja finalizar a votação? (s/n):');
+      if (resposta.toLowerCase() === 's') {
+        finalizarVotacao();
+      } else {
+        realizarVotacao();
+      }
+    }
+
+    function finalizarVotacao() {
+      console.log('\nResultados da votação:');
+      console.log(`Candidato_X: ${candidato_X} votos`);
+      console.log(`Candidato_Y: ${candidato_Y} votos`);
+      console.log(`Candidato_Z: ${candidato_Z} votos`);
+      console.log(`Votos em branco: ${votos_branco} votos`);
+      console.log(`Votos nulos: ${votos_nulos} votos`);
+
+      const maiorVotos = Math.max(candidato_X, candidato_Y, candidato_Z);
+      if (maiorVotos === candidato_X) {
+        console.log('\nVencedor: Candidato_X');
+      } else if (maiorVotos === candidato_Y) {
+        console.log('\nVencedor: Candidato_Y');
+      } else if (maiorVotos === candidato_Z) {
+        console.log('\nVencedor: Candidato_Z');
+      } else {
+        console.log('\nNão houve um vencedor claro.');
+      }
+    }
+
+    realizarVotacao();
+
+    </script>
+</body>
+</html>

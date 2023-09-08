@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eleições</title>
+</head>
+<body>
+    <script>
+        /*Desenvolva um código que simule uma eleição com três candidatos.
+- candidato_X => 889
+- candidato_Y => 847
+- candidato_Z => 515
+- branco => 0
+
+O código deve perguntar se deseja finalizar a votação depois do voto.
+Caso o número do voto não corresponda a nenhum candidato ou seja branco,
+ele deve ser tratado como nulo. Se for inserido um texto ao invés de número,
+o código deve retornar uma mensagem para votar novamente.
+
+Quando a votação for finalizada, o código deverá mostrar o vencedor, 
+aquele com o maior número de votos e, também, a quantidade de votos de cada candidato, 
+os brancos e nulos. 
+*/
+    
+       let candidatoX = 0;
+       let candidatoY = 0;
+       let candidatoZ = 0;
+       let branco = 0;
+
+       window.alert('Eleições!');
+        window.alert('Digite 889 para o candidato X, 847 para o candidato Y, 515 para o candidato Z e 0 para branco.')
+
+        let continuar = 'não';
+        while (continuar == 'não'){
+            let voto = Number.parseInt(window.prompt('Qual o seu voto? '));
+            if (voto == 889){
+                candidatoX++;
+            } else if (voto == 847){
+                candidatoY++;
+            } else if (voto == 515){
+                candidatoZ++;
+            } else if (voto == 0){
+                branco++;
+            } else {
+                window.alert('O valor não é compativel com a chapa informada.')
+            }
+            continuar = window.prompt('Deseja finalizar a votação? sim/não');
+        }
+        window.alert('Obrigado pelo seu Voto!')
+        /*
+        Quando a votação for finalizada, o código deverá mostrar o vencedor, aquele com o maior número de votos e, também, a quantidade de votos de cada candidato, os brancos e nulos. 
+        */
+
+        if (candidatoX > candidatoY && candidatoX > candidatoZ && candidatoX > branco){
+            window.alert('O candidato X foi eleito.');
+        } else if (candidatoY > candidatoX && candidatoY > candidatoZ && candidatoY > branco){
+            window.alert('O candidato Y foi eleito');
+        } else if (candidatoZ > candidatoX && candidatoZ > candidatoY && candidatoZ > branco){
+            window.alert('O candidato Z foi eleito');
+        } else{
+            window.alert('A quantidade votos brancos foi superior');
+        }
+
+        window.alert(`
+        Candidato X recebeu: ${candidatoX} votos.
+        Candidato Y recebeu: ${candidatoY} votos.
+        Candidato Z recebeu: ${candidatoZ} votos.
+        Votos brancos recebeu: ${branco} votos.`);
+document.write(candidatoX + candidatoY);
+
+    </script>
+</body>
+</html>

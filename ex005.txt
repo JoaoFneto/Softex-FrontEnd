@@ -1,0 +1,45 @@
+       
+
+Na tabela em anexo, encontramos dados de 4 jogadores de um game que contemplam os pontos e moedas obtidos durante as partidas e se conseguiram lutar ou não com o chefe.
+
+Baseado nos dados desses jogadores, foram construídas algumas expressões. Avalie cada expressão abaixo, observando as condições de cada jogador, descrito na tabela acima. 
+Marque com V( Verdadeiro) ou F(Falso) o resultado de cada expressão.
+
+       
+
+
+
+
+
+
+
+       //A tabela do enunciado não segue o informado, favor rever os dados.
+      
+       /*Jogador3 mostra False no entanto na tabela do enunciado mostra True.
+        seguindo a Disjunção o resultado deveria ser False */
+       
+       /*Jogador4 mostra True no entanto na tabela do enunciado mostra False.
+        seguindo a Disjunção o resultado deveria ser True */
+
+
+
+       var jogadorpontos1 = 120
+       var jogadormoedas1 = 15
+       var jogadorpontos2 = 99
+       var jogadormoedas2 = 200
+       var jogadorpontos3 = 100
+       var jogadormoedas3 = 5
+       var jogadorpontos4 = 101
+       var jogadormoedas4 = 4
+       
+       var joga1 = (jogadorpontos1 >= 100) && (jogadormoedas1 >= 5)
+       document.write(`enfrentou o chefe? ${joga1}<br>`)
+       
+       var joga2 = (jogadorpontos2 >= 100) && (jogadormoedas2 >= 5)
+       document.write(`enfrentou o chefe? ${joga2}<br>`)
+
+       var joga3 = (jogadorpontos3 < 100) || (jogadormoedas3 < 5)
+       document.write(`enfrentou o chefe? ${joga3}<br>`)
+       
+       var joga4 = (jogadorpontos4 != 100) || (jogadormoedas4 != 5 )
+       document.write(`enfrentou o chefe? ${joga4}`)

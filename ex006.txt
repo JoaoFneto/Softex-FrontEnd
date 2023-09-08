@@ -1,0 +1,45 @@
+Levando em consideração os aprendizados sobre as estruturas condicionais,
+elabore um algoritmo que possa descobrir, através de perguntas e respostas,
+qual é o meio de transporte que o usuário está considerando. O usuário deverá escolher uma das seguintes opções:
+
+- trator; 
+- moto; 
+- bicicleta. 
+
+Para chegar ao resultado, as perguntas precisam ser respondidas apenas com "Sim" ou "Não".
+
+Exemplo:
+É terrestre? Sim.
+Cabe apenas uma pessoa? Sim.
+É pesado? Não.
+Tem pedal? Sim.
+Então, o transporte escolhido foi a bicicleta.
+
+O operador Ternario é usado como uma estrutura de condição lhe dando mais de uma opção, como mostra no exercicio acima.
+podendo ser SIM OU NÃO
+
+
+document.write('O Veiculo é Terrestre?<br>');
+ let Terrestre = window.prompt('O veiculo é Terrestre? SIM / NÃO? ');
+ let Terrestre1 = Terrestre == 'sim'? "Sim, vamos identificar o veiculo" : "Não, vamos a pé"
+ document.write(`${Terrestre1}<br>`);
+
+ document.write('Cabe apenas uma pessoa?<br>');
+ let pessoa = window.prompt('Cabe apenas uma pessoa? SIM / NÃO? ');
+ let pessoa1 = pessoa == 'sim'? "Sim, eu vou então" : "legal, vai mais gente";
+ document.write(`${pessoa1}<br>`);
+
+ document.write('O Veiculo é pesado?<br>');
+ let pesado = window.prompt('O Veiculo é Pesado? SIM / NÃO? ');
+ let pesado1 = pesado =='sim'? "Sim, É um Trator" : "Não, deve ser um fusca";
+ document.write(`${pesado1}<br>`);
+ 
+ document.write('O Transporte tem pedal?<br>');
+ let pedal = window.prompt('O Veiculo tem pedal?');
+ let pedal1 = pedal == 'sim'? "Sim, É uma Bicicleta" : "Não, o que deve ser?";
+ document.write(`${pedal1}<br>`);
+
+ document.write('O veiculo usa capacete?<br>');
+ let capacete =  window.prompt(' O veiculo usa capacete? SIM OU NÃO?');
+ let capacete1 = capacete =='sim'? "Sim, Então é uma Moto" : "Não é moto";
+ document.write(capacete1);

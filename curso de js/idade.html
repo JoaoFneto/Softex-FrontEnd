@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade</title>
+</head>
+<body>
+    <script>
+     /*Desenvolva um programa que recebe do usuário nome completo e ano de nascimento que seja entre 1922 e 2021. A partir dessas informações, 
+      o sistema mostrará o nome do usuário e a idade que completou, ou completará, no ano atual (2022).
+      Caso o usuário não digite um número ou apareça um inválido no campo do ano, 
+      o sistema informará o erro e continuará perguntando até que um valor correto seja preenchido.*/
+
+      let nome = window.prompt("Digite o seu nome");;
+      
+      let ano = true;
+
+      while(ano){
+      let anonasci = parseInt(window.prompt("Digite seu Ano de Nascimento"));;
+      let idade = anonasci - 2022 
+      if (anonasci >=1922 && anonasci<=2021){ 
+           document.write(`Olá ${nome.toLocaleUpperCase()}, voce nasceu em ${anonasci} e sua idade é ${idade} `);
+       ano = false;
+        } else {
+        window.alert("Digite Novamente");
+       }
+    }
+       
+    </script>
+</body>
+</html>

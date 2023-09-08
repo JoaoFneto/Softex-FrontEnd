@@ -1,0 +1,27 @@
+Em uma inscrição, o usuário informou os seguintes dados:
+
+No algoritmo, descreva como será:
+1. A proposta das variáveis;
+2. Elaborada a declaração das variáveis;
+3. Utilizado o comando de atribuição.
+
+
+
+    // Os dados da questão será preenchido nos prompts à baixo
+
+    // Nome  = José Almeida da Silva
+    // CPF = 12345678900
+    // RG = 9517530
+    // Altura = 1,78
+    // Endereço = Rua A, 380 – Centro – Recife/PE
+  
+       var Nome = String(window.prompt('Qual seu nome?'))
+       var CPF = parseInt(window.prompt('Digite o seu CPF'))
+       var RG = parseInt(window.prompt('Digite o seu RG'))
+       var Altura = parseFloat(window.prompt('Digite a sua Altura')) 
+       var Endereço = String(window.prompt('Qual o seu endereço?')) 
+
+       document.write(`Bom dia seu: ${Nome}<br>`)
+       document.write(`Seu CPF e RG é: ${CPF} , ${RG} <br>`)
+       document.write(`Sua Altura é de: ${Altura.toFixed(2)}<br>`)
+       document.write(`Endereço: ${Endereço}`)

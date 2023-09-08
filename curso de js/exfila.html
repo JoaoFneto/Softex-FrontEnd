@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FilaLista</title>
+</head>
+<body>
+    <script>
+/* Fila ou FIFO (First-In, First-Out)
+significa o primeiro que entra é o primeiro que sai.*/
+document.write(`*Fila <br>`);
+const fila = [3, 7, 9, 1, 0];
+
+document.write(`${fila.shift()}<br>`);
+document.write(`O vetor Atual de Fila é:<br> ${fila}<br>`);
+
+
+/* A lista é um conjunto de elementos
+ que pode ser considerado uma Array,
+ utilizando o metodo push,
+ podendo fazendo uma declaração direta.*/
+
+document.write(`-----Lista----- <br>`);
+const lista = [3, 7, 9, 1, 0];
+
+const list = [];
+lista.forEach(num => list.push(num));
+while (list.length) {
+  document.write(`${list.shift()}<br>`);
+}
+
+/*Pilha ou FILO (First-In, Last-Out) 
+significa o primeiro que entra é o último que sai.*/ 
+document.write(`----Pilha---- <br>`);
+const pilha = [3, 7, 9, 1, 0];
+
+document.write(`${pilha.pop()}<br>`);
+document.write(`O restante do Vetor é:<br> ${pilha}`);
+    </script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+numero, contador: inteiro
+
+Inicio
+
+   Escreva("Digite o número que deseja verificar a taboada de multiplicação: ")
+   Leia(numero)
+   para contador <- 0 ate 10 faca
+   Escreval(numero, " *", contador, " =", numero * contador)
+   fimpara
+Fimalgoritmo
