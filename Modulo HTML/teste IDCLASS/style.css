@@ -1,0 +1,23 @@
+body {
+    text-align: center;
+    /* usando o text - align no body me deu condiçoes de centralizar 
+    o texto e a imagem, tudo que está dentro do body. */
+}
+
+#Titulo h1 {
+    background-color: chocolate;
+    /* chamando a div ID Titulo me da condiçoes de chamar uma tag especifica.
+ chamei a H1 e alterei a cor da sua fonte  */
+}
+
+.Subtitulo h1 {
+
+    background-color: black;
+    color: chocolate;
+    /* o mesmo eu fiz na div Class Subtitulo, chamei a tag especifica e alterei a cor da sua fonte.
+
+     O mesmo poderia ser feito pra os Paragrafos que estão dentro da div
+     a diferença é que pra nao ser alterado toda a estrutura da div
+     nos chamamos a TAG especifica.
+    */
+}
