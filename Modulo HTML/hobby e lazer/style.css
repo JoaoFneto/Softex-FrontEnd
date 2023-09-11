@@ -1,0 +1,10 @@
+.Inicio {
+    text-align: center;
+}
+
+.fim {
+    display: flex;
+    justify-content: space-around;
+    background-color: chocolate;
+    
+}

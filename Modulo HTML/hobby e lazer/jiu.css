@@ -1,0 +1,12 @@
+.Jiu{
+display: flex;    
+    justify-content: space-around;
+}
+p{
+    text-align: center;
+    color: chocolate;
+}
+body{
+    text-align: center;
+    background-color: white;
+}
