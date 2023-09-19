@@ -1,0 +1,25 @@
+.titulo {
+    position: absolute;
+    top: 10%;
+}
+
+.links {
+    position: absolute;
+    top: 80%;
+    
+}
+
+img {
+    border-radius: 50%;
+}
+
+body {
+    background-image: url(../img/teste.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    color: white;
+}
+a{
+    color: chocolate;
+}

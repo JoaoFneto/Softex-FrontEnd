@@ -1,0 +1,24 @@
+body {
+    text-align: center;
+    background-image: url(../img/teste.jpg);
+    color: white;
+}
+
+.inicio {
+    text-align: center;
+    margin: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    text-align: center;
+    margin: 5%;
+}
+
+p {
+    text-align: center;
+}
+a{
+    color: chocolate;
+}

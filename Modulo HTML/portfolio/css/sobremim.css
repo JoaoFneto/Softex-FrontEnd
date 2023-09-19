@@ -1,0 +1,12 @@
+.inicio {
+    margin: 10%;
+}
+
+body {
+    background-image: url(../img/teste.jpg);
+    text-align: center;
+    color: white;
+}
+a{
+    color: chocolate;
+}
